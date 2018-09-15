@@ -348,4 +348,4 @@ client.on('ready', () => {
     client.channels.find(c => c.id === '490246015346147338').join();
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN); 
