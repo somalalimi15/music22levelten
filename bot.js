@@ -344,6 +344,23 @@ client.on('message', message => {
 
 });
 
+  client.on('message', message => {
+  if (!message.guild) return;
+
+  if (message.content === '2play') {
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+        .then(connection => { 
+          message.reply('لقد دخلت الروم بنجاح !');
+        })
+        .catch(console.log);
+    } else {
+      message.reply('يجب ان تكون في روم صوتي');
+    }
+  }
+});
+  
+
 client.on('ready', () => {
     client.channels.find(c => c.id === '490246015346147338').join();
 });
