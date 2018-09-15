@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '1 help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (1)**')
@@ -343,7 +343,7 @@ client.on('message', message => {
 });
 
     client.on('ready', () => {
-     client.user.setActivity("Type |2Play .",{type: 'Playing'});
+     client.user.setActivity("Type | 2Play .",{type: 'Playing'});
 
 });
 
