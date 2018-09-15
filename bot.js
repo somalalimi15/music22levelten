@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js');
 
 const Util = require('discord.js');
 
@@ -339,7 +339,7 @@ client.on('message', message => {
     }
 });
 
-client.on('ready', () => {
+    client.on('ready', () => {
      client.user.setActivity("Type | 2Play .",{type: 'Playing'});
 
 });
@@ -348,4 +348,4 @@ client.on('ready', () => {
     client.channels.find(c => c.id === '490246015346147338').join();
 });
 
-client.login(process.env.BOT_TOKEN); 
+client.login(process.env.BOT_TOKEN);
