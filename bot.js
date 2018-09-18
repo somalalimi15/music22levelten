@@ -360,6 +360,14 @@ client.on('message', message => {
   }
 });
   
+client.on('ready',async () => {
+  sendReady('491517470138433536', `**__ تـم تـشـغـيـل الـبـوت بـنـجـاح , Music 2 Play Bot | Owner Bot : SoM # 1100__**`);
+  
+  function sendReady(channel, message) {
+    client.channels.get(channel).send(message);
+    console.log(message);
+  }
+});
 
 
 client.on('ready', () => {
